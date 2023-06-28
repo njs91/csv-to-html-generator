@@ -32,3 +32,21 @@ Follow the steps below to use the `csv_to_html.py` program:
    ```
 
 6. **View output**: The HTML will be in a file called output.html (gitignored)
+
+7. **Insert in the right place**: It might need to be placed in this (crappy) HTML structure:
+
+   ```
+   <div class='demo_page_subtitle_wrap'>
+        <demo_page_subtitle>
+            <p id="2023"><a href="#2023">2023</a></p>
+        </demo_page_subtitle>
+        <article class='file-table'>
+          <div class='row'>
+            <span>Source</span>
+            <span>Description</span>
+            <span>Filename</span>
+          </div>
+          rows...
+        </article>
+      </div>
+   ```
